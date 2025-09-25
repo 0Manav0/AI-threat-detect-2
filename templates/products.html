@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Products - AI Shop{% endblock %}
+
+{% block content %}
+<h1>Products</h1>
+<ul>
+    {% for product in products %}
+        <li>{{ product.name }} - ${{ product.price }}</li>
+    {% else %}
+        <li>No products available.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+
+{% block content %}
+<h2>Admin Dashboard</h2>
+<h3>All Products</h3>
+<div class="products">
+    {% for product in products %}
+        <div class="product-card">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.desc }}</p>
+            <p><strong>Price:</strong> ${{ product.price }}</p>
+        </div>
+    {% else %}
+        <p>No products available.</p>
+    {% endfor %}
+</div>
+{% endblock %}
