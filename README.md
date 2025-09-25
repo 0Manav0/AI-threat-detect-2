@@ -53,7 +53,7 @@ pip install flask pandas joblib scikit-learn
 
 
 # 1. Clone the repository
-git clone <repository-url>
+git clone <https://github.com/0Manav0/AI-threat-detect-2.git>
 cd project
 
 # 2. Install dependencies
