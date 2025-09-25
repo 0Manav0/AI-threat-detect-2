@@ -19,6 +19,7 @@ This project demonstrates how an AI-driven threat detection system can be integr
 ---
 
 ## Note:
+
  - This setup is for demo/educational purposes only
  - Modify `deploy.py` and templates as needed for your own web application
  - The model's thresholds, logging, and monitored features can be customized
@@ -31,7 +32,7 @@ similar to the previous one just modifications in deploy.py and some files of te
 ---
 
 ## how to use:
- 1. Visit '/' to see the main page
+ 1. Visit the main page at http://127.0.0.1:5000/
  2. Register a new user or login with existing credentials
  3. Navigate pages (products, add to cart, etc.)
  4. Each action is automatically logged and monitored by the AI model
@@ -43,29 +44,24 @@ similar to the previous one just modifications in deploy.py and some files of te
 - pandas
 - joblib
 - scikit-learn
-
-Install dependencies using:
-```bash
-pip install flask pandas joblib scikit-learn
-
+- before using first setup all the required files/folders as mentioned in https://github.com/0Manav0/AI-threat-detect.git
 
 ## Setup Instructions
 
+just copy-paste the deploy.py(of this repo) into the previously created deploy.py in src(folder).
 
-# 1. Clone the repository
-git clone <https://github.com/0Manav0/AI-threat-detect-2.git>
-cd project
+Change all the templates(folder)'s files with this repo's template also change static(folder).
 
-# 2. Install dependencies
+
+```bash
+
+# 1. Install dependencies
 pip install flask pandas joblib scikit-learn
 
-# 3. Ensure the model file exists
-# The `models/threat_detector_rf.pkl` file must exist.
-# If not, train your own model or download a compatible one.
 
-# 4. Run the Flask app
+# 1. Run the Flask app
 python deploy.py
 
-# 5. Access the app in your browser
+# 3. Access the app in your browser
 # Open: http://127.0.0.1:5000
-AI predictions are automatically logged for these actions.
+# AI predictions are automatically logged for these actions.
